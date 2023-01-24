@@ -11,17 +11,12 @@ body {
   grid-column: 0;
   transform:scale(1.5);
 }
-/* .title { grid-area: title; } */
-/* .description { grid-area: description; } */
 
 
 .grid-container {
 
   display: grid;
   grid-template-columns: 40px 1fr;
-  /* grid-template-areas:
-    'checkbox title'
-    'checkbox description'; */
   gap: 12px;
   background-color: lightgray;
   box-shadow: gray;
@@ -55,7 +50,6 @@ code {
   box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
   padding: 3px 10px;
   font-size: 24px;
-  /* margin-bottom: 6px; */
   border-radius: 3px;
   grid-column: 2; 
 }

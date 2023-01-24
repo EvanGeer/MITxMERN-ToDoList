@@ -34,8 +34,6 @@ function ToDoItem({item, index, handleDone, onUpdateTitle, onUpdateDescription})
     }
     const cancel = () => {
         toggleEditable();
-        // updateValue(item.title, onUpdateTitle);
-        // updateValue(item.description, onUpdateDescription);
     }
 
     const editableElements = (
@@ -44,35 +42,22 @@ function ToDoItem({item, index, handleDone, onUpdateTitle, onUpdateDescription})
                 className="checkbox"
                 checked={item.done}
                 onChange={handleDone}/>
-        <div id={index} key={index} className={todoClass}>
-            {/* <form onSubmit={handleTitleUpdate}> */}
+            <div id={index} key={index} className={todoClass}>
                 <input type="text"
                     className="input-title"
                     value={itemValue.title}
                     placeholder="add title..."
                     onChange={handleTitleChange}
                     />
-            {/* </form> */}
-            {/* <TextInput 
-                onSubmit={handleTitleUpdate}
-                onChange={handleTitleChange}
-                value={item.title} /> */}
-            {/* <form onSubmit={handleDescriptionUpdate}> */}
                 <input type="text"
                     className="input-description"
                     value={itemValue.description}
                     placeholder="add description..."
                     onChange={handleDescriptionChange}
                     />
-            {/* </form> */}
-            {/* <TextInput 
-                onSubmit={handleDescriptionUpdate} 
-                value={item.description}
-                onChange={handleDescriptionChange}
-                placeholder='add description...'/> */}
-        <button type="toggle" checked={editable} onClick={cancel}>Cancel</button>
-        <button type="toggle" checked={editable} onClick={save}>Ok</button>
-        </div>
+                <button type="toggle" checked={editable} onClick={cancel}>Cancel</button>
+                <button type="toggle" checked={editable} onClick={save}>Ok</button>
+            </div>
         </div>
     )
 

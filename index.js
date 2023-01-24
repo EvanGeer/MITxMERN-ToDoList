@@ -27,27 +27,16 @@ function ToDoListApp() {
     const updateTitle = (index, text) => {
         const temp = [...todoItems];
         temp[index].title = text;
-        // const newValue = {
-        //     title:text,
-        //     description:temp[index].description,
-        // }
-        // temp[index] = newValue;
         setTodoItems(temp);
     }
     const updateDescription = (index, text) => {
         const temp = [...todoItems];
         temp[index].description = text;
-        // const newValue = {
-        //     title:temp[index].title,
-        //     description:text
-        // }
-        // temp[index] = newValue;
         setTodoItems(temp);
     }
     return (
         <div className="todo-list">
             <button className="clear" type="toggle" onClick={removeDone}>Clear Done</button>
-            
             <ToDoList todoItems={todoItems} toggleDone={toggleDone} onUpdateTitle={updateTitle} onUpdateDescription={updateDescription}/>
             <TextInput onSubmit={addNew} placeholder={"Add Item..."} resetOnSubmit='1'/>
         </div>
