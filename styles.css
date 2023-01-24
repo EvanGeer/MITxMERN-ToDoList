@@ -1,0 +1,129 @@
+body {
+  margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.checkbox { 
+  grid-column: 0;
+  transform:scale(1.5);
+}
+/* .title { grid-area: title; } */
+/* .description { grid-area: description; } */
+
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  /* grid-template-areas:
+    'checkbox title'
+    'checkbox description'; */
+  gap: 12px;
+  background-color: lightgray;
+  box-shadow: gray;
+  padding: 6px;
+  padding-left: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  background: #209cee;
+  padding: 30px;
+  height: 100vh;
+}
+
+.todo-list{
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 500px;
+}
+
+.todoItem{
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
+  padding: 3px 10px;
+  font-size: 24px;
+  /* margin-bottom: 6px; */
+  border-radius: 3px;
+  grid-column: 2; 
+}
+
+.Done {
+  text-decoration: line-through;
+  color: lightskyblue;
+  font-style: italic;
+}
+
+.todoItem-Description{
+  font-size: 14px;
+  grid-column: 1;
+
+}
+
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1rem;
+  height: 2.25em;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.input-title{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px;
+  border-style: solid;
+  border-color: #209cee;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 0.75rem;
+  height: 2.25em;
+  font-size: 20px;
+}
+
+.input-description{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px;
+  border-style: solid;
+  border-color: #209cee;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 0.75rem;
+  height: 2.25em;
+  font-size: 12px;
+}
+
+.clear {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #209cee;
+  color: white;
+}
+.clear:hover{
+  background-color:#3275a2;
+  /* color: gray; */
+}

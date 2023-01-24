@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>ToDo List</title>
+</head>
+<body>
+
+    <h1>ToDo List</h1>
+
+    <!-- we will put our teact component inside this div -->
+    <div id="root"></div>
+
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- load our react component. -->
+    <script src="./components/TextInput.js" defer type="text/babel"></script>    
+    <script src="./components/ToDoItem.js" defer type="text/babel"></script>    
+    <script src="./components/ToDoList.js" defer type="text/babel"></script>    
+    <script src="index.js" defer type="text/babel"></script>
+
+
+  </body>
+</body>
+</html>
